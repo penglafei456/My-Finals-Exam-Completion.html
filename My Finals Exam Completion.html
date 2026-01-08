@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Study Experience</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .bg {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("bicker.gif");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: blur(20px);
+            transform: scale(1.2);
+            z-index: -1;
+        }
+
+        .content-wrapper {
+            display: flex;
+            max-width: 1200px;
+            margin: 60px auto;
+            align-items: flex-start;
+            position: relative;
+            z-index: 1;
+            gap: 0;
+        }
+
+        ul.menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            min-width: 150px;
+        }
+
+            ul.menu li {
+                text-decoration: none;
+                background-color: #9E1A1A;
+                font-size: 20px;
+                text-align: center;
+                padding: 0;
+                border-radius: 10px 0 0 10px;
+                margin: 0 0 10px 0;
+                transition: background-color 0.3s;
+            }
+
+                ul.menu li a {
+                    display: block;
+                    padding: 10px 10px;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 10px 0 0 10px;
+                }
+
+                ul.menu li:hover {
+                    background-color: #8E1600;
+                }
+
+        .article {
+            flex: 1;
+            width: 100%;
+            background-color: rgba(158, 26, 26, 0.6);
+            padding: 20px 50px 50px 50px;
+            border-radius: 0 10px 10px 0;
+            backdrop-filter: blur(4px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+
+            .article h1 {
+                margin: 10px auto;
+                color: white;
+                text-align: center;
+                font-size: 30px;
+            }
+
+            .article p {
+                color: white;
+                line-height: 1.6;
+                width: 100%;
+            }
+
+                .article p.description {
+                    text-align: center;
+                }
+
+                .article p.para {
+                    text-align: justify;
+                    font-size: 19px;
+                }
+
+                .article p.stext {
+                    text-align: right;
+                    font-size: 10px;
+                    margin: 0;
+                }
+
+        .box, .sbox {
+            background-color: rgba(158, 26, 26, 0.6);
+            border: 1px solid rgba(142, 22, 0, 0.6);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+            .box h2 {
+                margin-top: 0;
+                color: white;
+            }
+
+            .box img {
+                max-width: 200px;
+                max-height: 200px;
+                margin: 10px 10px 10px 0;
+                float: left;
+            }
+
+            .box img, .sbox img {
+                width: 135px;
+                margin: 5px 20px 10px 0;
+                float: left;
+                border-radius: 10px;
+            }
+
+        h3 {
+            font-size: 20px
+        }
+
+        .article h1.author {
+            text-align: left;
+        }
+
+        .article img.author-pic {
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg"></div>
+
+    <div class="content-wrapper">
+        <ul class="menu">
+            <li><a href="My Finals Exam Completion.html">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="https://anauthorlibrary.carrd.co/">Extras</a></li>
+        </ul>
+
+        <article class="article">
+            <div class="sbox">
+                <img class="author-pic" src="pictures used/Author Profile Pic.jpg" />
+                <h1 class="author">彭菈斐</h1>
+                <p class="author-info">This is the author of this webpage</p>
+                <p>This page contains information about the author</p>
+            </div>
+
+            <h1>Once-In-A-Lifetime International Student Life</h1>
+
+            <p class="description">
+                There is something about being a student here that really creates a unique experience like never before, whether it would be good or not, it's still something meant to be cherished
+            </p>
+
+            <p class="stext">scroll for more</p>
+
+            <div class="box">
+                <h2>How Did I Get Here?</h2>
+                <img src="pictures used/shadow.png" />
+                <p class="para">
+                    You know when an opportunity arises to you? Something so unbelievable to you
+                    that you start to question its own legitimate? If I stepped back and ran away from it,
+                    I wouldn't be holding a plane ticket to Taiwan. Such an experience before was not easy,
+                    such as gathering the needed requirements that were proven difficult to attain.
+                    But even so, I want to thank the support I've gotten, tho skeptical and worried,
+                    my family and friends supported me before I waved my last goodbye till I meet them again.
+                </p>
+            </div>
+            <div class="box">
+                <h2>Course Conflict & Equal Confusion</h2>
+                <img src="pictures used/trainride.png" />
+                <p class="para">
+                    The course chosen wasn't exactly the one I wanted
+                    to pursue in the future. Although technology is not a foreign concept
+                    to me, the studies that involved tech, mainly tackling software
+                    features were not something I had prior knowledge of.
+                    Not only that but as a foreigner in a country that barely spoke
+                    english was a huge struggle to me. Linguistic and Technology Issues aside,
+                    living conditions and new environment took me a while to adjust.
+                </p>
+            </div>
+            <div class="box">
+                <h2>Worthwhile Experiences</h2>
+                <img src="pictures used/dreamy.png" />
+                <p class="para">
+                    Even in those sleepless nights, tired mornings, and never-ending work and school
+                    responsibilities, you can never go wrong with going out for relaxation trips
+                    or hanging out with friends. In my free time, I would love to play games, especially
+                    with my dear friends from here or back at my home, Philippines. I also travel
+                    around Kaoshiung to buy merchandise of my favorite KPOP groups or Anime. These
+                    things make the busy life more bareable than anything
+                </p>
+            </div>
+            <div class="box">
+                <h2>Future Expectations & Hopeful Beginnings</h2>
+                <img src="pictures used/cossis.png" />
+                <p class="para">
+                    Even in one year, this is just yet the beginning of something
+                    much bigger and brighter. Whatever the future brings for me, I will be ready to take
+                    flight and fight. I hope that in the near days coming, I do hope that I don't give
+                    up on the goal I've scarred on my skin since then.
+                </p>
+            </div>
+        </article>
+
+    </div>
+</body>
+</html>
+

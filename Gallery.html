@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .bg {
+            position: fixed;
+            inset: 0;
+            background-image: url("willysalt.png");
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px);
+            z-index: -1;
+        }
+
+        .content-wrapper {
+            display: flex;
+            max-width: 1200px;
+            margin: 60px auto;
+            align-items: flex-start;
+            position: relative;
+            z-index: 1;
+            gap: 0;
+        }
+
+        ul.menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            min-width: 150px;
+        }
+
+            ul.menu li {
+                text-decoration: none;
+                background-color: #7a8494;
+                font-size: 20px;
+                text-align: center;
+                padding: 0;
+                border-radius: 10px 0 0 10px;
+                margin: 0 0 10px 0;
+                transition: background-color 0.3s;
+            }
+
+                ul.menu li a {
+                    display: block;
+                    padding: 10px 10px;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 10px 0 0 10px;
+                }
+
+                ul.menu li:hover {
+                    background-color: #5a6370;
+                }
+
+        .article {
+            flex: 1;
+            background-color: rgba(240, 240, 240, 0.6);
+            padding: 20px 50px 50px;
+            border-radius: 0 10px 10px 0;
+            backdrop-filter: blur(4px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .article h1 {
+                margin: 10px auto;
+                color: #2e2e2e;
+                text-align: center;
+            }
+
+            .article p {
+                color: #444;
+                line-height: 1.6;
+                width: 100%;
+            }
+
+                .article p.description {
+                    text-align: center;
+                }
+
+                .article p.stext {
+                    text-align: right;
+                    font-size: 9px;
+                }
+
+        .box{
+            background-color: rgba(200, 200, 200, 0.5);
+            border: 1px solid rgba(160, 160, 160, 0.6);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+            .box h2 {
+                margin-top: 0;
+                color: #333;
+            }
+
+           
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+            .photo-grid img {
+                width: 100%;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+                border-radius: 8px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                cursor: pointer;
+            }
+
+                .photo-grid img:hover {
+                    transform: scale(1.15);
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+                    z-index: 2;
+                }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+            .video-grid video {
+                width: 100%;
+                aspect-ratio: 9 / 16; /* mobile vertical */
+                object-fit: cover;
+                border-radius: 8px;
+                background: black;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                cursor: pointer;
+            }
+
+                .video-grid video:hover {
+                    transform: scale(1.08);
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+                    z-index: 2;
+                }
+
+    </style>
+</head>
+<body>
+    <div class="bg"></div>
+
+    <div class="content-wrapper">
+        <ul class="menu">
+            <li><a href="My Finals Exam Completion.html">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="https://anauthorlibrary.carrd.co/">Extras</a></li>
+        </ul>
+
+        <article class="article">
+            <h1>Once-In-A-Lifetime International Student Life</h1>
+
+            <p class="description">Student Life Gallery</p>
+
+            <p class="stext">scroll for more</p>
+
+            <div class="box">
+                <h2>Favorite Moments</h2>
+
+                <div class="photo-grid">
+                    <img src="pictures used/afterwork.jpg">
+                    <img src="pictures used/bestfriends.png">
+                    <img src="pictures used/fourcat.png">
+                    <img src="pictures used/pigeon.jpg">
+                    <img src="pictures used/hehefav.jpg">
+                    <img src="pictures used/theythem.jpg">
+                    <img src="pictures used/admin.jpg">
+                    <img src="pictures used/intern.jpg">
+                    <img src="pictures used/mewithsis.jpg">
+                </div>
+            </div>
+            <div class="box">
+                <h2>Short Video Moments</h2>
+
+                <div class="video-grid">
+                    <video src="VIDEOS/EEVE.mp4" controls muted></video>
+                    <video src="VIDEOS/SHESAIDWHAT.mp4" controls muted></video>
+                    <video src="VIDEOS/ROLLER.mp4" controls muted></video>
+                    <video src="VIDEOS/AFTERWORK.mp4" controls muted></video>
+                </div>
+            </div>
+
+        </article>
+    </div>
+</body>
+</html>
+
